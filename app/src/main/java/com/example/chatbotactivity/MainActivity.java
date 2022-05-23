@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         // url for our brain
         // make sure to add mshape for uid.
         // make sure to add your url.
-        String url = "Enter you API URL here" + userMsg;
+        String url = "https://api.brainshop.ai/get?bid=162882&key=t3JF55qSHHY5Ga5v&uid=[uid]&msg=" + userMsg;
 
         // creating a variable for our request queue.
         RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 // error handling.
                 messageModalArrayList.add(new MessageModal("Sorry no response found", BOT_KEY));
-                Toast.makeText(MainActivity.this, "No response from the bot..", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "No response from the bot..", Toast.LENGTH_SHORT).show();
             }
         });
 
